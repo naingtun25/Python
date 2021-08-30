@@ -93,8 +93,8 @@ print('\n\n\n')
 print('Hello World Wifi hotspot Enabler')
 print('(c) 2016 Hello World. All Right rserved.')
 print()
-ssid='Hello_World'
-password='12345678'
+ssid='Hello_World'#SSID can be change anytime from here
+password='12345678'#Password can be change anytime from here
 cmd = '0'
 while cmd != '3':
 	
@@ -105,7 +105,10 @@ while cmd != '3':
 	
 	if cmd == '1':
 		print('starting wifi........................')
+		ssid = input('Please enter ssid: ')# take the ssid
+		password = input('Please enter password: ')#take the password
 		os.system('netsh wlan set hostednetwork mode=allow ssid=" + ssid + " password=" + password"') #For windows only
+		os.system('netsh wlan set hostednetwork mode=allow ssid=Hello_World password=12345678')#fix SSID and password
 		os.system('netsh wlan start hostednetwork')
 	
 	elif cmd == '2':
