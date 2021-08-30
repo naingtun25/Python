@@ -85,6 +85,12 @@ while 1:
 	os.system(cmd)
 
 #Lesson 4.2 Github for Python
+#Lesson 4.3 Wifi hotspot enabled by Python Programming
+import os
+os.system('clear')
+print(\n\n\n)
+
+
 
 
 
