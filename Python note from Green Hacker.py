@@ -123,6 +123,7 @@ while cmd != '3':
 		print('unknown command')
 		os.system('pause')
 #Lesson 5 - Looping
+#Lesson 5.1 find IP and Try except
 import socket
 print (socket.gethostname())
 socket.gethostbyname("www.google.com")
@@ -133,6 +134,8 @@ try:
 	print("Ipv4 address is " + str(ip_address[2] [0])) #to get ip_address only
 except:
 	print ("error")
+#Lesson 5.2 IP Scanner
+#Lesson 6 - Number
 
 	
 
