@@ -122,6 +122,17 @@ while cmd != '3':
 	else:
 		print('unknown command')
 		os.system('pause')
+#Lesson 5 - Looping
+import socket
+print (socket.gethostname())
+socket.gethostbyname("www.google.com")
+hostname = socket.gethost()
+try:
+	ip_address = socket.gethostbyname_ex(hostname)
+	print(ip_address)
+	print("Ipv4 address is " + str(ip_address[2] [0])) #to get ip_address only
+except:
+	print ("error")
 
 	
 
